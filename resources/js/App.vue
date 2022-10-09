@@ -1,14 +1,17 @@
 <template>
-    <h1 class="text-center">{{ title }}</h1>
+  <Navbar />
+  <main class="min-h-screen">
+    <Additem />
+    <Listitem />
+  </main>
+  <Footer />
 </template>
-<script>
-export default {
-    setup: () => ({
-        title: 'How To Install Vue 3 in Laravel 9 From Scratch'
-    })
-}
+<script setup>
+import Navbar from "./components/Navbar.vue";
+import Additem from "./components/Additem.vue";
+import Listitem from "./components/Listitem.vue";
+import Footer from "./components/Footer.vue";
+// export default {};
 </script>
 
-<style>
-    
-</style>
+<style></style>
